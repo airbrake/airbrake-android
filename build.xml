@@ -6,10 +6,10 @@
     <property name="project" value="airbrake-android" />
 
     <!-- Standard jar stuff -->
-    <property name="jarfile" value="${project}-${version.num}.jar" />
+    <property name="build.dir" value="./build"/>
+    <property name="jarfile" value="${build.dir}/${project}-${version.num}.jar" />
     <property name="env.ANDROID_HOME" value="/usr/local/android_sdk"/>
     <property name="lib.dir" value="${env.ANDROID_HOME}/platforms/android-7/" />
-    <property name="build.dir" value="./build"/>
     <property name="classes.dir"  value="${build.dir}/classes"/>
     <buildnumber file="build.num" />
 
