@@ -16,7 +16,7 @@ github repository and run:
 ant package
 ```
 
-This will generate a file named `airbrake-android.jar`.
+This will generate a file named `build/airbrake-android-<version>.jar`.
 
 
 Installation & Setup
