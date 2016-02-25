@@ -159,6 +159,13 @@ public class AirbrakeNotifier {
     }
 
     /**
+     * Unregister the handler so no more errors are logged
+     */
+    public static void unregister() {
+        Thread.setDefaultUncaughtExceptionHandler(null);
+    }
+
+    /**
      * Add a custom set of key/value data that will be sent as session data with each notification
      * @param extraData a Map of String -> String
      */
