@@ -45,17 +45,17 @@ import android.util.Xml;
 /**
  * Airbrake Notifier
  *
- * Logs exceptions to Airbrake App (http://www.airbrakeapp.com)
+ * Logs exceptions to Airbrake App (https://api.airbrake.io)
  */
 public class AirbrakeNotifier {
     private static final String LOG_TAG = "AirbrakeNotifier";
 
     // Basic settings
-    private static final String AIRBRAKE_ENDPOINT = "http://airbrakeapp.com/notifier_api/v2/notices";
+    private static final String AIRBRAKE_ENDPOINT = "https://api.airbrake.io/notifier_api/v2/notices";
     private static final String AIRBRAKE_API_VERSION = "2.0";
 
     private static final String NOTIFIER_NAME = "Android Airbrake Notifier";
-    private static final String NOTIFIER_VERSION = "1.3.0";
+    private static final String NOTIFIER_VERSION = "1.4.0";
     private static final String NOTIFIER_URL = "http://loopj.com";
 
     private static final String UNSENT_EXCEPTION_PATH = "/unsent_airbrake_exceptions/";
